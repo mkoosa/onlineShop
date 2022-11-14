@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+
+/* common  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* end of common  */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+}
+
+.top__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 9rem;
+}
+
+.fa-chevron-left {
+    /* margin-right: 1rem; */
+    font-weight: 600;
+    font-size: 1.6rem;
+    position: relative;
+
+}
+
+.top__paragraph,
+.top__paragraph-create {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.top__paragraph::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4.3rem;
+    content: '';
+    width: 0;
+    height: .3rem;
+    background-color: #000;
+    transition: all .3s;
+}
+
+.top__paragraph:hover.top__paragraph::before {
+    width: 1.3rem;
+    transition: all .3s;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__icon {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.login__heading {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.details {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details__form-container {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.details__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.details__form--password {
+    position: relative;
+}
+
+.details__label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1rem;
+
+}
+
+.details__input {
+    margin: .7rem 0;
+    padding: .5rem;
+    font-size: 1.3rem;
+    width: 100%;
+    border: none;
+    border-bottom: .1rem solid lightgrey;
+
+}
+
+.details__icon {
+    font-size: 1.3rem;
+    color: #000;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+}
+
+.details__btn {
+    width: 100%;
+    height: 4rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.details__vertical {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical__text {
+    padding: .9rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.vertical__line {
+    height: 50%;
+    border-left: .1rem solid lightgray;
+}
+
+.media {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.media__element {
+    border: .1rem solid #000;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.media__element:hover{
+    background-color: rgb(235, 232, 232)
+}
+
+.media__icon {
+    font-size: 1.7rem;
+    margin: 0 2rem;
+}
+
+.media__text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.media__icon--facebook {
+    color: blue;
+}
+.login__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.login__trouble-txt {
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    width: auto;
+    cursor: pointer;
+}
+
+.login__trouble-txt::after{
+position: absolute;
+left: 0;
+top: 1.7rem;
+content: '';
+width: 0;
+height: .2rem;
+background-color: #000;
+transition: width .3s;
+}
+
+.login__trouble-txt:hover.login__trouble-txt::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+

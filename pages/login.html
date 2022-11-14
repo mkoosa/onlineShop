@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0ecbfc1464.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/loginStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <div class="top__back">
+                <i class="fa-solid fa-chevron-left top__icon" id="topIcon"></i>
+                <a href="../pages/main.html" class="top__paragraph" id="back">back</a>
+            </div>
+            <p class="top__paragraph-create">create account</p>
+        </div>
+        <div class="login">
+            <div class="login__logo">
+                <i class="fa-brands fa-aws login__icon"></i>
+                <h3 class="login__heading">login into greatDeal</h3>
+            </div>
+            <div class="login__details details">
+                <div class="details__form-container">
+                    <form action="#" class="details__form details__form--email">
+                        <label for="email" class="details__label">email address</label>
+                        <input type="email" id="email" placeholder="name@example.com" class="details__input">
+                    </form>
+                    <form action="#" class="details__form details__form--password">
+                        <label for="password" class="details__label">password</label>
+                        <input type="password" id="password" placeholder="password"
+                            class="details__input details__input--password">
+                        <div>
+                            <i class="fa-solid fa-eye details__icon bi-eye-slash" id="togglePassword"></i>
+                        </div>
+                    </form>
+                    <button type="submit" class="details__btn" disabled>log in</button>
+                </div>
+                <div class="details__vertical">
+                    <div class="vertical__line"></div>
+                    <p class="vertical__text">or</p>
+                    <div class="vertical__line"></div>
+                </div>
+                <div class="details__media media">
+                    <div class="media__element">
+                        <i class="fa-brands fa-google media__icon"></i>
+                        <p class="media__text">continue with google</p>
+                    </div>
+                    <div class="media__element">
+                        <i class="fa-brands fa-apple media__icon"></i>
+                        <p class="media__text">continue with apple</p>
+                    </div>
+                    <div class="media__element">
+                        <i class="fa-brands fa-facebook media__icon media__icon--facebook"></i>
+                        <p class="media__text">continue with google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="login__text">
+                <p class="login__trouble-txt">can't log in?</p>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>

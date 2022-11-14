@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0ecbfc1464.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css//style.css">
+    <title>greatDeal</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="background-img"></div>
+        <header class="header">
+            <div class="header__logo">
+                <i class="fa-brands fa-aws header__icon"></i>
+                <h1 class="header__name">greatDeal</h1>
+            </div>
+            <div class="small-menu"></div>
+            <ul class="header__list nav-list">
+                <li class="nav-list__item nav-list__item--sell dropdown-hover">
+                    <a href="#" class="nav-list__item-link link-products">Products</a><i class="fa-solid fa-angle-down list-icon list-icon--products"></i>
+                    <ul class="header__nav header__nav--sell nav-dropdown">
+                        <li class="nav-dropdown__item nav-dropdown__item--sell" id="dropDownList">
+                            <a href="#" class="nav-dropdown__link nav-dropdown__link--sell">sell anything</a>
+                            <a href="#" class="nav-dropdown__link nav-dropdown__link--sell">sell products</a>
+                            <a href="#" class="nav-dropdown__link nav-dropdown__link--sell">sell services</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__item-link nav-list__item-link--template">Template</a>
+                </li>
+                <li class="nav-list__item nav-list__item--resource dropdown-hover">
+                    <a href="#" class="nav-list__item-link link-resource">Resources</a><i
+                        class="fa-solid fa-angle-down list-icon"></i>
+                    <ul class="header__nav header__nav--resource  nav-dropdown">
+                        <li class="nav-dropdown__item nav-dropdown__item--resource" id="dropDownList">
+                            <a href="#" class="nav-dropdown__link">resource anything</a>
+                            <a href="#" class="nav-dropdown__link">resource products</a>
+                            <a href="#" class="nav-dropdown__link">resource services</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header__basket basket">
+                <p class="basket__counter"></p>
+                <p class="basket__paragraph">basket</p>
+                <i class="fas fa-regular fa-basket-shopping"></i>
+            </div>
+            <div class="header__buttons">
+                <a href="login.html" class="header__btn header__btn--top header__btn-login">log in</a>
+                <button class="header__btn header__btn--top header__btn-started header__btn-top">get started</button>
+            </div>
+            <div class="header__hamburger hamburger">
+                <div class="hamburger__line hamburger__line--first"></div>
+                <div class="hamburger__line hamburger__line--second"></div>
+                <div class="hamburger__line hamburger__line--third"></div>
+            </div>
+        </header>
+        <!-- basket page -->
+        <div class="basket-page">
+            <h4 class="basket-page__heading">your order</h4>
+            <div class="basket-page__wrapper">
+                <div class="basket-page__items">
+                </div>
+                <div class="basket-page__details">
+                    <div class="delivery">
+                        <p class="delivery__paragraph">delivery</p>
+                        <form action="#" class="delivery__form">
+                            <div class="delivery__input-wrapper">
+                                <input type="radio" value="ups" id="ups" class="delivery__input" name="choose">
+                                <label for="ups" class="delivery__label">delivery by UPS</label>
+                                <p class="delivery__cost">free</p>
+                            </div>
+                            <div class="delivery__input-wrapper">
+                                <input type="radio" value="dhl" id="dhl" name="choose">
+                                <label for="dhl" class="delivery__label">delivery by DHL</label>
+                                <p class="delivery__cost">free</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="basket-page__summary summary">
+                        <p class="summary__total">in total</p>
+                        <div class="summary__element">
+                            <p class="summary__price">price</p>
+                            <p class="summary__price-value"> <span class="price-in-total"></span>$</p>
+                        </div>
+                        <div class="summary__element">
+                            <p class="summary__price">delivery costs</p>
+                            <p class="summary__price-value"> <span class="delivery-value">00.00</span>$</p>
+                        </div>
+                        <div class="summary__line"></div>
+                        <div class="summary__element">
+                            <p class="summary__price">total price</p>
+                            <p class="summary__price-value"> <span class="total-value"></span>$</p>
+                        </div>
+                    </div>
+                    <div class="basket__btn">pay</div>
+                </div>
+            </div>
+        </div>
+        <!-- end of basket page -->
+        <main class="main">
+            <div class="main__top">
+                <div class="top__left">
+                    <h2 class="top__header">SELL ANYTHING</h2>
+                    <p class="top__paragraph top__paragraph--bold ">All you need to power your online store.</p>
+                    <p class="top__paragraph top__paragraph--small ">Whether you’re just getting started or are an
+                        established
+                        brand, our powerful platform helps your business grow.</p>
+                    <button class="header__btn header__btn-started">get started</button>
+                </div>
+                <div class="top__right product">
+                    <div class="product__left">
+                        <div class="product__images" id="ProductImages">
+                            <h2 class="product__header">tiny <span>great</span></h2>
+                            <img src="../images/watch1.jpg" alt="" class="product__image">
+                            <img src="../images/wrist-watch-2159351_1920.jpg" alt="" class="product__image">
+                            <img src="../images/waiting-410328_1920 (1).jpg" alt="" class="product__image">
+                        </div>
+                    </div>
+                    <div class="product__right">
+                        <ul class="product__nav">
+                            <a href="">
+                                <li class="product__nav-element">Shop</li>
+                            </a>
+                            <a href="">
+                                <li class="product__nav-element">About</li>
+                            </a>
+                            <a href="">
+                                <li class="product__nav-element">Blog</li>
+                            </a>
+                            <a href="">
+                                <li class="product__nav-element">Cart</li>
+                            </a>
+                            <a href="">
+                                <li class="product__nav-element"><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="">
+                                <li class="product__nav-element"><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                        </ul>
+                        <div class="product__details">
+                            <p class="product__price"><span class="dollar">$</span>199,99</p>
+                            <h2 class="product__name">Festina A3</h2>
+                            <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam
+                                aut cupiditate provident, quos voluptate dolorum voluptas voluptatum magni ad nulla
+                                odio,
+                                illum
+                                as,bero ab iure.</p>
+                            <div class="product__basket">
+                                <p class="product__quantity">Quantity</p>
+                                <form action="#" class="product__quantity-form">
+                                    <input type="text" class="product__amount" name="quantity" title="festina">
+                                    <button class="product__order-btn" type="submit">Add to chart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="selling">
+                <div class="selling__top">
+                    <h2 class="selling__heading">
+                        Sell products
+                    </h2>
+                    <p class="selling__paragraph">Showcase your products at their absolute best. Allow your visitors to
+                        browse your merchandise, add items to their cart, check out simply and efficiently, and leave
+                        product reviews.</p>
+                    <p class="selling__learn">learn more</p>
+                </div>
+                <div class="selling__img-container">
+                    <div class="selling__container">
+                        <div class="selling__header">
+                            <p class="selling__name">Bestforyou</p>
+                            <ul class="selling__nav">
+                                <a href="">
+                                    <li class="selling__list-element">Shop</li>
+                                </a>
+                                <a href="">
+                                    <li class="selling__list-element">LookBook</li>
+                                </a>
+                                <a href="">
+                                    <li class="selling__list-element">About</li>
+                                </a>
+                                <a href="">
+                                    <li class="selling__list-element">Contact</li>
+                                </a>
+                                <a href="">
+                                    <li class="selling__list-element">Cart(<span>0</span>)</li>
+                                </a>
+                                <a href="">
+                                    <li class="selling__list-element"><i class="fa-brands fa-instagram"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="selling__product-wrapper">
+                            <div class="selling__left">
+                                <p class="selling__product-price"><span class="dollar">$</span>49.99</p>
+                                <h2 class="selling__product-name">Some Tunic</h2>
+                                <form action="#" class="selling__product-form">
+                                    <label for="size" class="selling__label">Size</label>
+                                    <select name="sizes" id="size" class="selling__size-select">
+                                        <option value="s" class="selling__size-value">s</option>
+                                        <option value="m" class="selling__size-value">m</option>
+                                        <option value="l" class="selling__size-value">l</option>
+                                        <option value="xl" class="selling__size-value">xl</option>
+                                    </select>
+                                </form>
+                                <div class="product__basket">
+                                    <p class="product__quantity">Quantity</p>
+                                    <form action="#" class="product__quantity-form">
+                                        <input type="text" class="product__amount" name="quantity" title="tunic">
+                                        <button class="product__order-btn product__order-btn--black" type="submit">Add
+                                            to
+                                            chart</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="selling__right">
+                                <img src="../images/sell-products-ui-2-1500w.jpg" alt="" class="selling__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="store-management">
+            <div class="store-management__wrapper">
+                <div class="label">
+                    <div class="label__icons">
+                        <i class="fa-brands fa-aws icon-logo label__icon"></i>
+                        <i class="fa-solid fa-xmark label__icon"></i>
+                    </div>
+                    <h3 class="label__heading">Your shipping label is ready to print</h3>
+                    <p class="label__paragraph">We'll email yoy o copy of yor receipt and
+                        tracking. To access all of your labels go to Orders.
+                    </p>
+                    <p class="label__payment">Payment summary</p>
+                    <div class="label__summary">
+                        <div>
+                            <p class="label__shipping"><i
+                                    class="fa-solid fa-truck-arrow-right label__truck"></i>Shipping label</p>
+
+                            <div class="label__mail label__mail--priority">
+                                <p class="label__point">UPS Priority mail</p>
+                                <p class="label__price">$8.50</p>
+                            </div>
+                            <div class="label__mail label__mail--subtotal">
+                                <p class="label__point">Subtotal</p>
+                                <p class="label__price">$8.50</p>
+                            </div>
+                            <div class="label__mail label__mail--tax">
+                                <p class="label__point label__point--uderlined">Tax</p>
+                                <p class="label__price">$0.8</p>
+                            </div>
+                            <div class="label__mail label__mail--paid">
+                                <p class="label__point label__point--bold">Paid</p>
+                                <p class="label__price label__price--bold">$93.0</p>
+                            </div>
+                        </div>
+                        <div class="label__footer">
+                            <p class="return-txt">Return to shipping</p>
+                            <button class="label__button" type="button">
+                                print label<i class="fas fa-regular fa-print print-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="management">
+                    <h2 class="management__heading">Manage your online store</h2>
+                    <p class="management__paragraph">Handle shipping and fulfillment, taxes, payments and more, all in
+                        one
+                        place.</p>
+                    <p class="management__tip">learn more</p>
+                    <ul class="management__list">
+                        <li class="management__element">01.
+                            Flexible shipping options, including flat-rate, weight-based, and real-time shipping rates.
+                        </li>
+                        <li class="management__element">02.
+                            Simple payment and checkout options for your customers.</li>
+                        <li class="management__element">03.
+                            Straightforward tax tools make compliance easy.</li>
+                        <li class="management__element">04.
+                            Effortlessly manage your orders and engage with your customers.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="starting">
+            <div class="starting__wrapper">
+                <div class="starting__top">
+                    <h2 class="starting__heading">How to start an online store</h2>
+                    <div class="starting__animation start">
+                        <p class="starting__paragraph">get started</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <ul class="starting__list">
+                    <li class="starting__item"><span class="space">01.</span>Find an<span class="grey">ecommerce
+                            template</span>and
+                        start
+                        your free trial.
+                    </li>
+                    <li class="starting__item"><span class="space">02.</span>Register or transfer your business’s domain
+                        name.</li>
+                    <li class="starting__item"><span class="space">03.</span>Set up your online store by adding products
+                        and connecting
+                        a
+                        payment processor.</li>
+                    <li class="starting__item"><span class="space">04.</span>Or, if you sell services, you can set up
+                        <span class="grey">appointments</span>through Squarespace scheduling.</li>
+                    <li class="starting__item"><span class="space">05.</span>Customize your online store categories and
+                        content with the
+                        website
+                        builder.</li>
+                    <li class="starting__item"><span class="space">06.</span>Grow your online store with<span
+                            class="grey">email
+                            marketing</span> and SEO.</li>
+                </ul>
+            </div>
+            <div class="starting__bottom">
+                <p class="starting__remark">Squarespace is the all‑in‑one platform to build a beautiful website.</p>
+                <button class="starting__btn">start free trial</button>
+            </div>
+        </section>
+        <footer>
+            <p class="footer"> &copy; koOsa </p>
+        </footer>
+    </div>
+    <script src="../scripts/main.js" type="module"></script>
+</html>
+
